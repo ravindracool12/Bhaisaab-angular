@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="container">
+    <h4 *ngIf="error">{{error}}</h4>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+    <form (ngSubmit)="submit()">
+      <div class="form-group col-3">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" [(ngModel)]="username" />
+      </div>
+      <div class="form-group col-3">
+        <label for="password">Mobile</label>
+        <input type="int" name="mobile" class="form-control" [(ngModel)]="mobile" />
+      </div>
+      <div class="form-group col-3">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" [(ngModel)]="password" />
+      </div>
+      <div class="form-group col-3">
+        <button class="btn btn-primary" type="submit">Register</button>
+      </div>
+    </form>
+    <p class="loginhere">
+      Have already a member ? <a href="login.component.html" class="loginhere-link">Login here</a>
+  </p>
+ </div>
+</div>
+</div>

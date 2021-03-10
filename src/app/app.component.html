@@ -1,0 +1,98 @@
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a routerLink="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!--************************************
+      PreLoader Start
+  *************************************-->
+  
+  <!--************************************
+      PreLoader End
+  *************************************-->
+  <!--************************************
+      Wrapper Start
+  *************************************-->
+  <div id="bt-wrapper" class="bt-wrapper bt-haslayout">
+    <!--************************************
+        Header Start
+    *************************************-->
+    <nav id="bt-nav" class="bt-nav">
+      <a class="bt-btntogglemenu" routerLink="javascript:void(0);">X</a>
+      <div id="bt-navigation" class="bt-navigation">
+        <strong class="bt-logo"><a routerLink="index.html"><img src="assets/images/logo-3.png" alt="image description"></a></strong>
+        <ul class="bt-menu">
+          <li class="bt-active bt-hasdropdown">
+            <span>01.</span>
+            <a routerLink="/">home</a>
+          </li>
+          <li class="bt-hasdropdown">
+            <span>02.</span>
+            <a routerLink="/aboutus">about us</a>
+          </li>
+          <li class="bt-hasdropdown">
+            <span>03.</span>
+            <a routerLink="/gallery">Gallery</a>
+          </li>
+          <li class="bt-hasdropdown">
+            <span>04.</span>
+            <a routerLink="/blog">Blog</a>
+          </li>
+          <li class="bt-hasdropdown">
+            <span>05.</span>
+            <a routerLink="/register">Partner With Us</a>
+          </li>
+          <li class="bt-hasdropdown">
+            <span>06.</span>
+            <a routerLink="login">Login</a>
+          </li>
+        </ul>
+        <ul class="bt-socialicons">
+          <li><a routerLink="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a routerLink="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a routerLink="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <ul class="bt-navinfo">
+          <li><span>Email </span><a routerLink="info@bhaisaab.co">info@bhaisaab.co</a></li>
+          <li><span>Phone +91 956 075 5823</span></li>
+          <li><address>Delhi</address></li>
+        </ul>
+      </div>
+    </nav>
+    <header id="bt-header" class="bt-header bt-headervfour bt-haslayout">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <strong class="bt-logo"><a routerLink="#"><img src="/assets/images/logo3.png" alt="image description"></a></strong>
+            <div class="bt-navigationarea">
+              <ul>
+                <li class="bt-hasdropdown">
+                  <a routerLink="" routerLinkActive="active">Home</a>
+                </li>                
+                <li class="bt-hasdropdown">
+                  <a routerLink="/occasions" routerLinkActive="active">Occasions</a>
+                </li>                
+                <li class="bt-hasdropdown">
+                  <a routerLink="/countactus" routerLinkActive="active">Contact Us</a>
+                </li>
+                <li class="bt-hasdropdown">
+                  <a routerLink="/ourstory" routerLinkActive="active">Our Story</a>
+                </li>
+                <li class="bt-hasdropdown">
+                  <a routerLink="/login" routerLinkActive="active">Login</a>
+                </li>
+                <li><a class="bt-btntogglemenu" routerLink="javascript:void(0);"><img src="/assets/images/icons/icon-04.png" alt="image description"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--************************************
+        Header End
+    *************************************-->
+    <router-outlet></router-outlet>
+      
+   
+    <!--************************************
+        Footer End
+    *************************************-->
+  </div>

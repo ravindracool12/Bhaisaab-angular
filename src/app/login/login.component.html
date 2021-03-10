@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <h4 *ngIf="error">{{error}}</h4>
+  <div class="container">  
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+    <form (ngSubmit)="submit()">
+      <div class="form-group col-3">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" [(ngModel)]="username" />
+      </div>
+      <div class="form-group col-3">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" [(ngModel)]="password" />
+      </div>
+      <div class="form-group col-3">
+        <button class="btn btn-primary" type="submit">Login</button>
+      </div>
+    </form>
+    <p class="loginhere">
+      If you have no account ? <a href="register.component.html" class="loginhere-link">Register here</a>
+  </p>
+ </div>
+</div>
+</div>
